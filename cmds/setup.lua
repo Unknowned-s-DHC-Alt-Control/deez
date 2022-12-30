@@ -92,6 +92,7 @@ return function(...)
 
     if table.find(areas,data[2]) then
         local area = data[2]:lower()
+        local OldTable = Lib
         for i=1,Lib[area]['MaxIterations']*Lib[area]['MaxPerRow'] do
             local x,y,z = Lib[area]['CurrentX'],Lib[area]['StartY'],Lib[area]['CurrentZ']
             if ReSort(Alts)[i] == plr.UserId then
@@ -105,5 +106,6 @@ return function(...)
                 Lib[area]['CurrentX'] = Lib[area]['StartX']
             end
         end
+        Lib = OldTable
     end
 end
