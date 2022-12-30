@@ -78,9 +78,9 @@ if not ishost then
 end
 
 --// Alt control stuff
-local PackageLoader = "https://raw.githubusercontent.com/batlilman/deez/main/cmds/"
-pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/batlilman/deez/main/module.lua"))() end)
-pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/batlilman/deez/main/anticheat.lua"))() end)
+local PackageLoader = "https://raw.githubusercontent.com/Unknowned-s-DHC-Alt-Control/deez/main/cmds/"
+pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Unknowned-s-DHC-Alt-Control/deez/main/module.lua"))() end)
+pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Unknowned-s-DHC-Alt-Control/deez/main/anticheat.lua"))() end)
 local player = game:service"Players".LocalPlayer
 local LoadedPackages, LoadedFunctions = {}, {}
 
